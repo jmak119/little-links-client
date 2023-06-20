@@ -1,38 +1,35 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import "./Header.scss";
+import './Header.scss';
 
-import logo from "../../assets/images/logo.jpg"
+import { Icon } from 'react-icons-kit';
+import { menu } from 'react-icons-kit/feather/menu';
+import { x } from 'react-icons-kit/feather/x';
 
 const Header = () => {
+
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = () => {
+        setToggle(!toggle);
+    }
+
     return (
-        <header className="header">
-            <div className="header__logo-container">
-                <Link to="/">
-                    <img src={logo} className="header__logo-img" alt="Little Links Logo"></img>
-                </Link>
-                <h2>Little Links</h2>
-                <div className='header__menu-icon'></div>
+        <nav className={toggle ? 'header expanded' : 'header'}>
+            <h2 className='logo'>Little Links</h2>
+            <div className='toggle-icon' onClick={handleToggle}>
+                {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
             </div>
-
-            <div>
-
-            </div>
-
-            {/* <div className="header__search-container">
-
-                <form className="header__searchbar-form">
-                    <button type="submit" className="header__searchbar-icon"></button>
-                    <input type="text" className="header__searchbar-input" id="search-bar" name="search-bar" placeholder="Search" />
-                </form> */}
-
-                {/* <img className="user-avatar header__avatar-order" src={userAvatar} alt="user profile avatar"></img> */}
-
-                {/* <Link to="/upload" className="header__upload-button">
-                    UPLOAD
-                </Link> */}
-            </div>
-        </header>
-    );
-};
+            <ul className='links'>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Sign Up/Log In</li>
+            </ul>
+        </nav>
+    )
+}
 
 export default Header;
+
+

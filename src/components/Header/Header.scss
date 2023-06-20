@@ -1,29 +1,97 @@
 @use "../../styles/fonts" as *;
 @use "../../styles/global" as *;
 @use "../../styles//mixins" as *;
-@use "../../styles/variables"as *;
+@use "../../styles/variables" as *;
 
-.header {
+.header{
+    width: 100%;
+    height: 80px;
+    padding: 30px;
+    background-color: $teal;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
-
-    @include tablet {
-        flex-direction: row;
-        padding: 1.5rem 2.25rem;
-        justify-content: space-between;
+  }
+  
+  .header .logo{
+    color: $background-white;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .header .links{
+    list-style: none;
+    display: flex;
+    color: $background-white;
+    cursor: pointer;
+  }
+  
+  .header .links li{
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .header .toggle-icon{
+    display: none
+  }
+  
+  @media(max-width: 768px){
+    .header{
+      position: relative;
+      transition: 0.5s all ease-in-out;
     }
-
-    @include desktop {
-        width: 63.75rem;
-        margin: 0 auto;
-        padding: 1.5rem 0;
+  
+    .header.expanded{
+      height: 100vh;
     }
-
-    &__logo-img {
-        height: 5rem;
-        
+  
+    .header.expanded .links{
+      position: absolute;
+      top: 120px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
     }
-
-}
+  
+    .header.expanded .links li{
+      margin: 15px 0;
+      font-size: 24px;
+    }
+  
+    .header .logo{
+      position: absolute;
+      top: 23px;
+      left: 20px;
+    }
+  
+    .header .toggle-icon{
+      display: block;
+      color:$background-white;
+      position: absolute;
+      top: 24px;
+      right: 20px;
+    }
+  
+    .header .links{
+      position: absolute;
+      top: -300px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .header .links li{
+      margin: 15px 0;
+      font-size: 24px;
+    }
+  }
