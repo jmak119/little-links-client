@@ -8,7 +8,11 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 export default function DenseTable( {toiletList} ) {
-// console.log(toiletList);
+
+  if (!toiletList) {
+    return <span>Loading...</span>;
+  }
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 320 }} size="small" aria-label="a dense table">
@@ -19,9 +23,9 @@ export default function DenseTable( {toiletList} ) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {toiletList.toiletList.map((routine) => (
+          {toiletList.map((routine) => (
             <TableRow
-              key={toiletList.toiletList.name}
+              key={toiletList.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell align="center">{routine.start_time}</TableCell>

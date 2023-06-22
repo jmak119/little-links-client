@@ -7,9 +7,13 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-export default function DenseTable(  {mealLog}  ) {
+import "./MealLog.scss";
 
-    console.log(mealLog)
+export default function DenseTable({ mealLog }) {
+
+  if (!mealLog) {
+    return <span>Loading...</span>;
+  }
 
   return (
     <TableContainer component={Paper}>
@@ -21,10 +25,14 @@ export default function DenseTable(  {mealLog}  ) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {mealLog.mealLog.map((meal) => (
-            <TableRow
-              key={mealLog.mealLog.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+          {mealLog.map((meal) => (
+            <TableRow className='table-row'
+              key={mealLog.name}
+              sx={{ 
+                '&:last-child td, &:last-child th': { border: 0 },
+                
+
+               }}
             >
               <TableCell align="center">{meal.start_time}</TableCell>
               <TableCell align="center">{meal.description}</TableCell>

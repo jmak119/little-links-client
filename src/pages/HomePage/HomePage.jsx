@@ -16,10 +16,9 @@ const Homepage = () => {
 
     useEffect(() => {
         axios
-            .get(`${apiUrl}/dailyLogs/${selectedDate}`)
+            .get(`${apiUrl}/dailyLogs/${selectedDate}/4`)
             .then((response) => {
                 setFullList(response.data);
-                
             })
             .catch((err) => {
                 console.error(err);
@@ -29,15 +28,6 @@ const Homepage = () => {
     if (!fullList) {
         return <span>Loading...</span>;
     }
-    
-    // setDailyStudentDetails(fullList.filter(item => item.student_id===1 && item.date === selectedDate));
-
-    const toiletList= fullList.filter(item => item.type ==="toilet");
-    // const mealLog = fullList.filter(item => item.type === "meal");
-    // const sleepLog = fullList.filter(item => item.type ==="sleep");
-    
-
-    // console.log(sleepLog)
 
     return (
         <>
@@ -46,13 +36,9 @@ const Homepage = () => {
                     <MyCalendar />
                 </div>
                 <div className="home__log-container">
-                    <DailyLog 
-                        // fullList = {fullList}
-                        toiletList={toiletList}
-                        // mealLog={mealLog}
-                        // sleepLog = {sleepLog}
-                         />
-                    
+                    <DailyLog
+                        fullList={fullList}
+                    />
                 </div>
             </div>
         </>

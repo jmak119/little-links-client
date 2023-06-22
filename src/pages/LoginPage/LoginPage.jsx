@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import { teal, grey } from '@mui/material/colors';
 
 function Copyright(props) {
   return (
@@ -29,7 +30,17 @@ function Copyright(props) {
 
 // TODO remove, this demo shouldn't need to reset the theme.
 
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  palette: {
+    primary: {
+      main: teal[300],
+    },
+    secondary: {
+      main: '#f44336',
+    },
+  },
+});
+
 
 export default function SignIn() {
   const handleSubmit = (event) => {

@@ -1,0 +1,21 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+th {
+    background-color: $teal;
+    color: $background-white;
+}
+
+.table-row {
+
+    &:hover {
+        background-color: $light-grey;
+    }
+}
+
+.css-12q85cb-MuiTableCell-root {
+    width: 50%;
+    text-align: right;
+}

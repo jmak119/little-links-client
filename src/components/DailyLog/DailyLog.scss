@@ -1,0 +1,9 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+.log {
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}

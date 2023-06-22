@@ -20,7 +20,7 @@ export default function DenseTable( {sleepLog} ) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {sleepLog.sleepLog.map((routine) => (
+          {sleepLog.map((routine) => (
             <TableRow
               key={sleepLog.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
