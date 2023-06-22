@@ -1,13 +1,21 @@
-// import {
-//     Calendar as BigCalendar,
-//     CalendarProps,
-//     momentLocalizer,
-// } from 'react-big-calendar';
-// import moment from 'moment';
+import { Calendar, momentLocalizer } from 'react-big-calendar'
+import moment from 'moment'
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+import './Calendar.scss';
 
-// const localizer = momentLocalizer(moment);
+// Setup the localizer by providing the moment (or globalize, or Luxon) Object
+// to the correct localizer.
+const localizer = momentLocalizer(moment) // or globalizeLocalizer
 
-// export default function Calendar(props) {
-//     const { localizer, ...rest } = props;
-//     return <BigCalendar {...rest} localizer={localizer} />;
-//   }
+const MyCalendar = (props) => (
+  <div className="myCustomHeight">
+    <Calendar
+      localizer={localizer}
+    //   events={myEventsList}
+      startAccessor="start"
+      endAccessor="end"
+    />
+  </div>
+)
+
+export default MyCalendar;

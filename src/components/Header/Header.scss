@@ -22,14 +22,18 @@
   .header .links{
     list-style: none;
     display: flex;
-    color: $background-white;
-    cursor: pointer;
   }
   
   .header .links li{
     margin: 0 15px;
     font-size: 14px;
     font-weight: 600;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $background-white;
+    cursor: pointer;
   }
   
   .header .toggle-icon{
@@ -65,7 +69,7 @@
   
     .header .logo{
       position: absolute;
-      top: 23px;
+      top: 24px;
       left: 20px;
     }
   

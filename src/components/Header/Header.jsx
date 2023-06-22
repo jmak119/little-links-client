@@ -21,10 +21,10 @@ const Header = () => {
                 {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
             </div>
             <ul className='links'>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Sign Up/Log In</li>
+                <li><Link to="/" className='link'>Home</Link></li>
+                <li><Link to="/" className='link'>About Us</Link></li>
+                <li><Link to="/" className='link'>Contact Us</Link></li>
+                <li><Link to="/" className='link'>Sign Up / Log In</Link></li>
             </ul>
         </nav>
     )
