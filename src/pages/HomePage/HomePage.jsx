@@ -34,8 +34,10 @@ const Homepage = () => {
 
     const toiletList= fullList.filter(item => item.type ==="toilet");
     // const mealLog = fullList.filter(item => item.type === "meal");
+    // const sleepLog = fullList.filter(item => item.type ==="sleep");
+    
 
-    // console.log(mealLog)
+    // console.log(sleepLog)
 
     return (
         <>
@@ -48,6 +50,7 @@ const Homepage = () => {
                         // fullList = {fullList}
                         toiletList={toiletList}
                         // mealLog={mealLog}
+                        // sleepLog = {sleepLog}
                          />
                     
                 </div>

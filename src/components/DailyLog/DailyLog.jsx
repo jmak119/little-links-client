@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import ToiletTable from "../ToiletTable/ToiletTable";
 import ToiletLegend from "../ToiletLegend/ToiletLegend";
 import MealLog from "../MealLog/MealLog";
+import SleepLog from "../SleepLog/SleepLog";
 
 import './DailyLog.scss';
 
-const DailyLog = (  toiletList,  mealLog  ) => {
-    
+const DailyLog = (toiletList, mealLog, sleepLog) => {
+
     return (
         <>
             <div className="log">
@@ -20,12 +21,15 @@ const DailyLog = (  toiletList,  mealLog  ) => {
 
                     <div className="log__schedule-container">
                         <div className="log__toilet-routine">
-                            <ToiletTable toiletList={toiletList}/>
+                            <ToiletTable toiletList={toiletList} />
                             <ToiletLegend />
                         </div>
                         <div className="log__meal-log">
                             {/* <MealLog mealLog = {mealLog} /> */}
-                            
+
+                        </div>
+                        <div className="log__sleep-log">
+                            {/* <SleepLog sleepLog={sleepLog} /> */}
                         </div>
                     </div>
 
