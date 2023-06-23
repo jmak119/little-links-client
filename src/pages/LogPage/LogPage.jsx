@@ -13,10 +13,11 @@ const LogPage = () => {
     const [selectedDate, setSelectedDate] = useState('2023-06-28');
 
     const [fullList, setFullList] = useState();
+    const {id} = useParams();
 
     useEffect(() => {
         axios
-            .get(`${apiUrl}/dailyLogs/${selectedDate}/1`)
+            .get(`${apiUrl}/students/${id}`)
             .then((response) => {
                 setFullList(response.data);
             })

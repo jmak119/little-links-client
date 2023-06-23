@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
-        <Route path="/log" element={<LogPage />} />
+        <Route path="/students/:id" element={<LogPage />} />
       </Routes>
     </BrowserRouter>
   );

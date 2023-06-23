@@ -5,7 +5,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 
 import './HomePage.scss';
@@ -16,10 +17,13 @@ import { useParams } from 'react-router-dom';
 
 const Homepage = () => {
 
-    const [age, setAge] = React.useState('');
+    // const [studentId, setStudentId] = React.useState('');
+    const navigate = useNavigate();
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        // setStudentId(event.target.value);
+        navigate(`/students/${event.target.value}`)
+        // console.log(studentId)
     };
 
     return (
@@ -35,12 +39,12 @@ const Homepage = () => {
                         <Select
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
+                            // value={studentId}
+                            // label="studentId"
+                            onChange={(event) => {handleChange(event)}}
                         >
-                            <MenuItem value={10}>Emma</MenuItem>
-                            <MenuItem value={20}>Athena</MenuItem>
+                            <MenuItem value={1}>Emma</MenuItem>
+                            <MenuItem value={4}>Athena</MenuItem>
                             
                         </Select>
                     </FormControl>
