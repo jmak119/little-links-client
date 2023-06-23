@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <nav className={toggle ? 'header expanded' : 'header'}>
-            <h2 className='logo'>Little Links</h2>
+            <h2 ><Link to="/"className='logo link'>Little Links</Link></h2>
             <div className='toggle-icon' onClick={handleToggle}>
                 {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={28} />}
             </div>
@@ -24,7 +24,7 @@ const Header = () => {
                 <li><Link to="/Home" className='link' onClick={handleToggle}>Home</Link></li>
                 <li><Link to="/" className='link' onClick={handleToggle}>About Us</Link></li>
                 <li><Link to="/" className='link' onClick={handleToggle}>Contact Us</Link></li>
-                <li><Link to="/" className='link' onClick={handleToggle}>Sign Up / Log In</Link></li>
+                <li><Link to="/login" className='link' onClick={handleToggle}>Sign Up / Log In</Link></li>
             </ul>
         </nav>
     )

@@ -39,7 +39,9 @@ const DailyLog = ({ fullList }) => {
         <>
             <div className="log">
                 <div className="log__student-container">
+                    
                     <img className="log__id-photo" />
+
                     <div className="log__student-info">
                         <p><span>Name: </span>{`${nameDetails.student_name}`}</p>
                         <p><span>Date: </span>Jan</p>
@@ -48,14 +50,18 @@ const DailyLog = ({ fullList }) => {
 
                     <div className="log__schedule-container">
                         <div className="log__toilet-routine">
+                            <h2 className="log__section-title">Toileting Routine</h2>
                             <ToiletTable toiletList={toiletList} />
                             <ToiletLegend />
                         </div>
-                        <div className="log__meal-log">
-                            <MealLog mealLog={mealLog} />
 
+                        <div className="log__meal-log">
+                            <h2 className="log__section-title">Meals</h2>
+                            <MealLog mealLog={mealLog} />
                         </div>
+
                         <div className="log__sleep-log">
+                            <h2 className="log__section-title">Sleep Log</h2>
                             <SleepLog sleepLog={sleepLog} />
                         </div>
                     </div>
