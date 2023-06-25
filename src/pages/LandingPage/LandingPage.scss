@@ -4,17 +4,98 @@
 @use "../../styles/variables" as *;
 
 .landing {
-    
+
     &__body-container {
         margin: 0 auto;
-        width: 100%;
-        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 1rem;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            padding: 3rem 2rem;
+        }
+
+        @include desktop {
+            width: 63.75rem;
+            padding: 3rem 0;
+            gap: 1.5rem;
+        }
     }
 
     &__logo {
-        width: 15rem;
+        width: 17rem;
+
+        @include tablet {
+            width: 22rem;
+        }
+
+        @include desktop {
+            width: 30rem;
+        }
+    }
+
+    &__welcome-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 0.25rem;
+
+        @include tablet {
+            padding-bottom: 1rem;
+        }
+
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
+    &__author {
+        text-align: right;
+        font-weight: 600;
+        padding-bottom: 1rem;
+
+        @include tablet {
+            text-align: left;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__about-us {
+        padding-bottom: 1rem;
+
+        @include desktop {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        @include desktop {
+            justify-content: right;
+            gap: 1rem;
+        }
     }
 }
+
+
+
