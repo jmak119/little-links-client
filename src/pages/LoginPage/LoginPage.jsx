@@ -33,7 +33,8 @@ function Copyright(props) {
 const defaultTheme = createTheme({
   palette: {
     primary: {
-      main: teal[300],
+      main: '#3CCFC1',
+      contrastText: '#FFFFFF'
     },
     secondary: {
       main: '#f44336',
