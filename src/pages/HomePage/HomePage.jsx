@@ -6,6 +6,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from 'react-router-dom';
+import { createTheme } from '@mui/material/styles';
+
 
 import './HomePage.scss';
 
@@ -21,7 +23,7 @@ const Homepage = () => {
         <section className="home">
             <div className="home__container">
                 <h1 className="home__welcome">Welcome back Mr. Jonathan!</h1>
-                <p>Please select a student:</p>
+                <p className="home__label">Please select a student:</p>
             </div>
             <form className="home__student-container">
                 <Box sx={{ minWidth: 120 }}>
@@ -38,15 +40,7 @@ const Homepage = () => {
                         </Select>
                     </FormControl>
                 </Box>
-                <Button
-                    variant="contained"
-                    href="#contained-buttons"
-                    disableElevation
-                    component={Link}
-                    to="/log"
-                >
-                    Submit
-                </Button>
+                
             </form>
         </section>
     )

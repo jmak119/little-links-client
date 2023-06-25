@@ -1,0 +1,29 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+.home {
+    padding: 2rem 1rem;
+    width: 100%;
+
+    @include tablet {
+        width: 28.125rem;
+        margin: 0 auto;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__welcome {
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    &__label {
+        color: #AFAFAF;
+        padding-bottom: 0.25rem;
+    }
+}
