@@ -1,70 +1,65 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1>Little Links</h1>
+<hr><p>A day to day record of students that ECEs can update with information and observations and parents can see and contact educators as well for any concerns they may have about their children. Educators have access to their class, and can post individual pictures and daily going ons to each student's profile that their families can view, as well as communicate with them.</p><ul>
+<li>As a former ECE, I have always noticed that we do not have an adequate way to communicate with parents of our students. Stuff like meals, nap times, and washroom and diaper changes are all marked down on paper and a physical copy is given to parents. Also, in order to communicate with parents about daily happenings, we would usually email or wait until the end of the day.</li>
+</ul><ul>
+<li>I want to have a program that can streamline this process of communicating with parents and them to ECEs.</li>
+</ul><h2>Technologies Used</h2>
+<hr><ul>
+<li>HTML</li>
+</ul><ul>
+<li>CSS</li>
+</ul><ul>
+<li>JavaScript</li>
+</ul><ul>
+<li>React</li>
+</ul><ul>
+<li>NodeJS</li>
+</ul><ul>
+<li>MySQL</li>
+</ul><ul>
+<li>Express</li>
+</ul><ul>
+<li>Knex</li>
+</ul><ul>
+<li>Sass</li>
+</ul><h2>Features</h2>
+<hr><ul>
+<li>Student Selection</li>
+</ul><ul>
+<li>Calendar</li>
+</ul><ul>
+<li>Daily Logs</li>
+</ul><ul>
+<li>Toileting Routine</li>
+</ul><ul>
+<li>Sleep Schedule</li>
+</ul><ul>
+<li>Meal Logs</li>
+</ul><ul>
+<li>future steps: comments, image uploading, user authentication</li>
+</ul><h5>Steps</h5><ul>
+<li>Download or clone Git repository</li>
+</ul><ul>
+<li>npm i sass</li>
+</ul><ul>
+<li>npm i react-router-dom</li>
+</ul><ul>
+<li>npm i axios</li>
+</ul><ul>
+<li>npm install</li>
+</ul><ul>
+<li>npm start</li>
+</ul><h2>Usage</h2>
+<hr><p>Teachers: log in in order to see your class and update the daily logs of your students.</p>
+<p>Parents: Log in to your child's profile in order to view their day to day logs and interact with their teachers through commenting on their day.</p><h2>Project Status</h2>
+<hr><p>In Progress</p><h2>Improvements</h2>
+<hr><ul>
+<li>future styling changes to the log pages and forms</li>
+</ul><h2>Features that can be added</h2>
+<hr><ul>
+<li>Image uploading and commenting, functionality for the calendar</li>
+</ul><ul>
+<li>Teacher upload form</li>
+</ul><ul>
+<li>user authentication</li>
+</ul>
