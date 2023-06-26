@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-export default function DenseTable( {sleepLog} ) {
+export default function DenseTable({ sleepLog }) {
 
   return (
     <TableContainer component={Paper}>
@@ -25,9 +25,24 @@ export default function DenseTable( {sleepLog} ) {
               key={sleepLog.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell align="center">{routine.start_time}</TableCell>
-              <TableCell align="center">{routine.end_time}</TableCell>
-              <TableCell align="center">{routine.description}</TableCell>
+              <TableCell
+                align="center"
+                key={sleepLog.start_time}
+              >
+                {routine.start_time}
+              </TableCell>
+              <TableCell
+                align="center"
+                key={sleepLog.end_time}
+              >
+                {routine.end_time}
+              </TableCell>
+              <TableCell
+                align="center"
+                key={sleepLog.description}
+              >
+                {routine.description}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

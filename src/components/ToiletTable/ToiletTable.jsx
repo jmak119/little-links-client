@@ -42,8 +42,18 @@ export default function DenseTable({ toiletList }) {
                 key={toiletList.name}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
-                <TableCell align="center">{routine.start_time}</TableCell>
-                <TableCell align="center">{routine.description}</TableCell>
+                <TableCell
+                  align="center"
+                  key={toiletList.start_time}
+                >
+                  {routine.start_time}
+                </TableCell>
+                <TableCell
+                  align="center"
+                  key={toiletList.description}
+                >
+                  {routine.description}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

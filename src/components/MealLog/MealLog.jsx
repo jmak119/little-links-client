@@ -28,14 +28,22 @@ export default function DenseTable({ mealLog }) {
           {mealLog.map((meal) => (
             <TableRow className='table-row'
               key={mealLog.name}
-              sx={{ 
+              sx={{
                 '&:last-child td, &:last-child th': { border: 0 },
-                
-
-               }}
+              }}
             >
-              <TableCell align="center">{meal.start_time}</TableCell>
-              <TableCell align="center">{meal.description}</TableCell>
+              <TableCell
+                align="center"
+                key={mealLog.start_time}
+              >
+                {meal.start_time}
+              </TableCell>
+              <TableCell
+                align="center"
+                key={mealLog.description}
+              >
+                {meal.description}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
