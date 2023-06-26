@@ -14,14 +14,14 @@ export default function DenseTable( {sleepLog} ) {
       <Table sx={{ minWidth: 320 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
-            <TableCell align="center">Start Time</TableCell>
-            <TableCell align="center">End Time</TableCell>
-            <TableCell align="center">Comments</TableCell>
+            <TableCell align="center"><span style={{ color: '#FFFFFF' }}>Start Time</span></TableCell>
+            <TableCell align="center"><span style={{ color: '#FFFFFF' }}>End Time</span></TableCell>
+            <TableCell align="center"><span style={{ color: '#FFFFFF' }}>Comments</span></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {sleepLog.map((routine) => (
-            <TableRow
+            <TableRow className='table-row'
               key={sleepLog.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >

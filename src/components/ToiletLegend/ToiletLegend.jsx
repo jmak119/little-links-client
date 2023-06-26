@@ -5,7 +5,7 @@ export default function ToiletLegend () {
     return (
         <>
             <div className="legend">
-                <h4 className="legend__title">LEGEND: </h4>
+                <h4 className="legend__title legend__title--bold">LEGEND: </h4>
                 <p className="legend__title">W = WET</p>
                 <p className="legend__title">D = DRY</p>
                 <p className="legend__title">TT = TRIED THE TOILET</p>

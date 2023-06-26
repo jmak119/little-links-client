@@ -10,8 +10,6 @@ import { useParams } from 'react-router-dom';
 
 const LogPage = () => {
 
-    const [selectedDate, setSelectedDate] = useState('2023-06-28');
-
     const [fullList, setFullList] = useState();
     const {id} = useParams();
 

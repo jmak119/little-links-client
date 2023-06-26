@@ -20,8 +20,8 @@ export default function DenseTable({ mealLog }) {
       <Table sx={{ minWidth: 320 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
-            <TableCell align="center">Time</TableCell>
-            <TableCell align="center">Description</TableCell>
+            <TableCell align="center"><span style={{ color: '#FFFFFF' }}>Time</span></TableCell>
+            <TableCell align="center"><span style={{ color: '#FFFFFF' }}>Description</span></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

@@ -2,3 +2,14 @@
 @use "../../styles/global" as *;
 @use "../../styles//mixins" as *;
 @use "../../styles/variables" as *;
+
+th {
+    background-color: $teal;
+}
+
+.table-row {
+
+    &:hover {
+        background-color: $light-grey;
+    }
+}

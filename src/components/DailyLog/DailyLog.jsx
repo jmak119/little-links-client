@@ -30,18 +30,18 @@ const DailyLog = ({ fullList }) => {
                     </div>
 
                     <div className="daily__schedule-container">
-                        <div className="daily__toilet-routine">
+                        <div className="daily__schedule-table">
                             <h2 className="daily__section-title">Toileting Routine</h2>
                             <ToiletTable toiletList={toiletList} />
                             <ToiletLegend />
                         </div>
 
-                        <div className="daily__meal-log">
+                        <div className="daily__schedule-table">
                             <h2 className="daily__section-title">Meals</h2>
                             <MealLog mealLog={mealLog} />
                         </div>
 
-                        <div className="daily__sleep-log">
+                        <div className="daily__schedule-table">
                             <h2 className="daily__section-title">Sleep Log</h2>
                             <SleepLog sleepLog={sleepLog} />
                         </div>
