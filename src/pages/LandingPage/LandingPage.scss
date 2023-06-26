@@ -90,10 +90,21 @@
         flex-direction: row;
         justify-content: space-evenly;
 
-        @include desktop {
+        @include tablet {
             justify-content: right;
             gap: 1rem;
         }
+    }
+
+    &__video {
+        margin: 0 auto;
+        padding: 3rem 1rem;
+
+        @include desktop {
+            width: 63.75rem;
+            height: 30rem;
+        }
+        
     }
 }
 

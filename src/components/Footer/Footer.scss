@@ -1,0 +1,21 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+.footer {
+    height: 5rem;
+    width: 100%;
+    background-color: $teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+
+    &__image-credits {
+        text-decoration: none;
+        color: $background-white;
+        font-size: .625rem;
+    }
+}

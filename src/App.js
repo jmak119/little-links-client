@@ -5,20 +5,24 @@ import Homepage from "./pages/HomePage/HomePage";
 import Login from './pages/LoginPage/LoginPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import LogPage from './pages/LogPage/LogPage';
-
+import Footer from './components/Footer/Footer';
 import './App.scss';
-
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Homepage />} />
-        <Route path="/students/:id" element={<LogPage />} />
-      </Routes>
+      <div id="root">
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/home" element={<Homepage />} />
+            <Route path="/students/:id" element={<LogPage />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

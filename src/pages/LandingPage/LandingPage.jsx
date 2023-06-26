@@ -57,7 +57,7 @@ export default function LandingPage() {
                     <div className='landing__button-container'>
                         <Button
                             variant="contained"
-                            theme= {theme}
+                            theme={theme}
                             href="#contained-buttons"
                             disableElevation
                             component={Link}
@@ -67,7 +67,7 @@ export default function LandingPage() {
                         </Button>
                         <Button
                             variant="contained"
-                            theme= {theme}
+                            theme={theme}
                             href="#contained-buttons"
                             disableElevation
                             component={Link}
@@ -78,6 +78,9 @@ export default function LandingPage() {
                     </div>
                 </div>
 
+            </div>
+            <div className='landing__video'>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/31gZZZ-XG94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
 
