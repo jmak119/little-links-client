@@ -1,0 +1,38 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+.log {
+    
+    @include desktop {
+        width: 63.75rem;
+        margin: 0 auto;
+    }
+
+    &__calendar {
+        padding: 2rem 1.5rem;
+        border-bottom: 1px solid rgb(167, 166, 166);
+        
+        @include tablet {
+            padding: 2rem 2.25rem;
+        }
+    }
+
+    &__container {
+        padding: 1.5rem;
+
+        @include tablet {
+            padding: 2rem 2.25rem;
+        }
+    }
+
+    &__title {
+        
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    
+}

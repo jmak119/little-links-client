@@ -1,0 +1,32 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__title {
+
+        @include tablet {
+            font-size: 1.25rem;
+        }
+
+        &--bold {
+            font-weight: 600;
+        }
+    }
+
+    &__details {
+        @include tablet{
+            font-size: 1.2rem;
+        }
+    }
+}

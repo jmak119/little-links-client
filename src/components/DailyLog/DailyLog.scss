@@ -3,7 +3,24 @@
 @use "../../styles//mixins" as *;
 @use "../../styles/variables" as *;
 
-.log {
+.daily {
     margin: 0 auto;
-    padding: 1rem 1rem;
+
+    &__student-info {
+        padding-bottom: 1rem;
+
+        @include tablet {
+            padding-bottom: 1.5rem
+        }
+    }
+
+    &__section-title {
+        padding-bottom: 0.5rem;
+        font-size: 1rem;
+
+        @include tablet{
+            font-size: 1.25rem;
+            padding-bottom: 1rem ;
+        }
+    }
 }

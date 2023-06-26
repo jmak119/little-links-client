@@ -1,4 +1,12 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
 .rbc-calendar {
-    height: 35rem;
-    padding: 2rem;
+    height: 20rem;
+
+    @include tablet {
+        height: 35rem;
+    }
 }

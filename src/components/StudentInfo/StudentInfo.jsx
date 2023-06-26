@@ -12,9 +12,9 @@ export default function StudentInfo({ studentInfo }) {
     return (
         <>
             <section className='info'>
-                <p><span>Name: </span>{`${studentInfo.student_name}`}</p>
-                <p><span>Date: </span>{todaysDate}</p>
-                <p><span>Teacher: </span>{`${studentInfo.teacher_name}`}</p>
+                <p className='info__details'><span className='info__title info__title--bold'>Name: </span>{`${studentInfo.student_name}`}</p>
+                <p className='info__details'><span className='info__title info__title--bold'>Date: </span>{todaysDate}</p>
+                <p className='info__details'><span className='info__title info__title--bold'>Teacher: </span>{`${studentInfo.teacher_name}`}</p>
             </section>
         </>
     );

@@ -32,12 +32,12 @@ const LogPage = () => {
 
     return (
         <>
-            <div className="home__body">
-                <div>
+            <div className="log">
+                <div className="log__calendar">
                     <MyCalendar />
                 </div>
-                <div className="home__log-container">
-                    <h2 className="home__daily-log">Daily Log</h2>
+                <div className="log__container">
+                    <h2 className="log__title">Daily Log</h2>
                     <DailyLog
                         fullList={fullList}
                     />
