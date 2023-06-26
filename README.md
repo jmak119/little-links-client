@@ -40,9 +40,11 @@
 </ul><h5>Steps</h5><ul>
 <li>Download or clone Git repository</li>
 </ul><ul>
-<li>npm i sass</li>
+<li>npm i dontenv</li>
 </ul><ul>
 <li>npm i react-router-dom</li>
+</ul><ul>
+<li>npm i knex</li>
 </ul><ul>
 <li>npm i axios</li>
 </ul><ul>
