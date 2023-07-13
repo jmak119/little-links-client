@@ -8,6 +8,7 @@
 
     &__student-info {
         padding-bottom: 1rem;
+        border-bottom: 1px solid rgb(167, 166, 166);
 
         @include tablet {
             padding-bottom: 1.5rem
@@ -19,6 +20,7 @@
     }
 
     &__section-title {
+        padding-top: 1rem;
         padding-bottom: 0.5rem;
         font-size: 1rem;
 

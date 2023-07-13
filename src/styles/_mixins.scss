@@ -13,3 +13,20 @@
         @content;
     }
 }
+
+// button design
+
+@mixin button-properties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    // color: $primary-white;
+    // background-color: $primary-blue;
+    border: none;
+    border-radius: .25rem;
+    background-position: 0.5rem center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    text-decoration: none;
+}

@@ -9,39 +9,39 @@ import "./LandingPage.scss";
 
 export default function LandingPage() {
 
-    const theme = createTheme({
-        palette: {
-            primary: {
-                // light: will be calculated from palette.primary.main,
-                main: '#3CCFC1',
-                // dark: will be calculated from palette.primary.main,
-                contrastText: '#FFFFFF'
-            },
-            secondary: {
-                light: '#0066ff',
-                main: '#0044ff',
-                // dark: will be calculated from palette.secondary.main,
-                contrastText: '#ffcc00',
-            },
-            // Provide every color token (light, main, dark, and contrastText) when using
-            // custom colors for props in Material UI's components.
-            // Then you will be able to use it like this: `<Button color="custom">`
-            // (For TypeScript, you need to add module augmentation for the `custom` value)
-            custom: {
-                light: '#ffa726',
-                main: '#f57c00',
-                dark: '#ef6c00',
-                contrastText: 'rgba(0, 0, 0, 0.87)',
-            },
-            // Used by `getContrastText()` to maximize the contrast between
-            // the background and the text.
-            contrastThreshold: 3,
-            // Used by the functions below to shift a color's luminance by approximately
-            // two indexes within its tonal palette.
-            // E.g., shift from Red 500 to Red 300 or Red 700.
-            tonalOffset: 0.2,
-        },
-    });
+    // const theme = createTheme({
+    //     palette: {
+    //         primary: {
+    //             // light: will be calculated from palette.primary.main,
+    //             main: '#3CCFC1',
+    //             // dark: will be calculated from palette.primary.main,
+    //             contrastText: '#FFFFFF'
+    //         },
+    //         secondary: {
+    //             light: '#0066ff',
+    //             main: '#0044ff',
+    //             // dark: will be calculated from palette.secondary.main,
+    //             contrastText: '#ffcc00',
+    //         },
+    //         // Provide every color token (light, main, dark, and contrastText) when using
+    //         // custom colors for props in Material UI's components.
+    //         // Then you will be able to use it like this: `<Button color="custom">`
+    //         // (For TypeScript, you need to add module augmentation for the `custom` value)
+    //         custom: {
+    //             light: '#ffa726',
+    //             main: '#f57c00',
+    //             dark: '#ef6c00',
+    //             contrastText: 'rgba(0, 0, 0, 0.87)',
+    //         },
+    //         // Used by `getContrastText()` to maximize the contrast between
+    //         // the background and the text.
+    //         contrastThreshold: 3,
+    //         // Used by the functions below to shift a color's luminance by approximately
+    //         // two indexes within its tonal palette.
+    //         // E.g., shift from Red 500 to Red 300 or Red 700.
+    //         tonalOffset: 0.2,
+    //     },
+    // });
 
 
     return (
@@ -55,7 +55,7 @@ export default function LandingPage() {
                         Little Links is a non-profit with the mission to help bridge the communication gap between Registered Early Childhood Educators and their students and families.
                     </p>
                     <div className='landing__button-container'>
-                        <Button
+                        {/* <Button
                             variant="contained"
                             theme={theme}
                             href="#contained-buttons"
@@ -74,7 +74,14 @@ export default function LandingPage() {
                             to="/login"
                         >
                             Sign-Up
-                        </Button>
+                        </Button> */}
+                        <Link to="/login" className='landing__button' >
+                                Log-In
+                        </Link>
+
+                        <Link to="/signup" className='landing__button'>
+                            Sign-Up
+                        </Link>
                     </div>
                 </div>
 
