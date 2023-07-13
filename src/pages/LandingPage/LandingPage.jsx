@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import { createTheme } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 import Logo from "../../assets/images/logo.png"
 
@@ -88,6 +89,10 @@ export default function LandingPage() {
             </div>
             <div className='landing__video'>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/31gZZZ-XG94" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
+
+            <div>
+                <Testimonials />
             </div>
 
 
