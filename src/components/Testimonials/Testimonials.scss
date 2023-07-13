@@ -1,0 +1,43 @@
+@use "../../styles/fonts" as *;
+@use "../../styles/global" as *;
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 18.5rem;
+        height: 32rem;
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 0 15px hsla(37,39%,62%,.702);
+        overflow: hidden;
+    }
+
+    &__quote-container {
+        display: flex;
+        align-items: center;
+        height: 70%;
+        padding: 0 2.25rem;
+    }
+
+    &__author-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: 30%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(199, 31, 199, 0.801);
+    }
+}
