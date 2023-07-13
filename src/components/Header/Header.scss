@@ -5,7 +5,7 @@
 
 .header{
     width: 100%;
-    height: 80px;
+    height: 130px;
     padding: 30px;
     background-color: $teal;
     display: flex;
@@ -15,7 +15,7 @@
   
   .header .logo{
     color: $background-white;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 600;
   }
   
@@ -26,7 +26,7 @@
   
   .header .links li{
     margin: 0 15px;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 600;
   }
 
@@ -69,16 +69,17 @@
   
     .header .logo{
       position: absolute;
-      top: 24px;
-      left: 20px;
+      top: 48px;
+      left: 25px;
+      font-size: 2rem;
     }
   
     .header .toggle-icon{
       display: block;
       color:$background-white;
       position: absolute;
-      top: 24px;
-      right: 20px;
+      top: 50px;
+      right: 25px;
     }
   
     .header .links{
