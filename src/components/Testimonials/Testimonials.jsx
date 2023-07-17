@@ -15,10 +15,10 @@ export default function Testimonials() {
             </div>
 
             <div className="testimonials__card">
-                <div className="testimonials__quote-container">
+                <div className="testimonials__quote-container testimonials__">
                     <p>The best thing about using Little Links is the amount of time we saved!</p>
                 </div>
-                <div className="testimonials__author-container">
+                <div className="testimonials__author-container testimonials__yellow">
                     <p>Allison Wilcox</p>
                     <p>Little Hands Montessori</p>
                 </div>
@@ -28,7 +28,7 @@ export default function Testimonials() {
                 <div className="testimonials__quote-container">
                     <p>The best thing about using Little Links is the amount of time we saved!</p>
                 </div>
-                <div className="testimonials__author-container">
+                <div className="testimonials__author-container testimonials__orange">
                     <p>Allison Wilcox</p>
                     <p>Little Hands Montessori</p>
                 </div>
