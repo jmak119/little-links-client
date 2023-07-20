@@ -10,17 +10,17 @@
     margin-bottom: 2rem;
 
     @include tablet {
-        flex-direction: row;
         padding: 0 1rem;
-        width: 48rem;
+        width: 100%;
         margin: 0 auto 3rem auto;
     }
 
     @include desktop {
-       justify-content: space-around; 
-       width: 63.75rem;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 63.75rem;
     }
-    
+
 
     &__card {
         display: flex;
@@ -31,12 +31,14 @@
         height: 25rem;
         border: none;
         border-radius: 1rem;
-        box-shadow: 0 0 15px hsla(37,39%,62%,.702);
+        box-shadow: 0 0 15px hsla(37, 39%, 62%, .702);
         overflow: hidden;
         background-color: antiquewhite;
+        position: relative;
 
         @include tablet {
-            
+            width: 100%;
+            height: 30rem;
         }
 
         @include desktop {
@@ -48,8 +50,33 @@
     &__quote-container {
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 70%;
         padding: 0 2.25rem;
+
+    }
+
+    &__avatar {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        position: absolute;
+        top: 55%;
+        left: 33%;
+
+        @include tablet {
+            top: 55%;
+            left: 44%;
+            height: 6rem;
+            width: 6rem;
+        }
+
+        @include desktop {
+            top: 57%;
+            left: 34%;
+        }
         
     }
 
@@ -57,7 +84,7 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        height: 30%;
+        height: 35%;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -68,7 +95,7 @@
     &__orange {
         background-color: $orange;
     }
-    
+
     &__yellow {
         background-color: $yellow;
     }
