@@ -8,17 +8,21 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2rem;
+    padding: 1rem 0;
 
     @include tablet {
-        padding: 0 1rem;
+        padding: 1rem 1rem;
         width: 100%;
         margin: 0 auto 3rem auto;
+        gap: 2.5rem;
     }
 
     @include desktop {
         flex-direction: row;
         justify-content: space-around;
-        width: 63.75rem;
+        width: 64rem;
+        padding: 2rem 0;
+        gap: 3rem;
     }
 
 
@@ -37,13 +41,14 @@
         position: relative;
 
         @include tablet {
-            width: 100%;
-            height: 30rem;
+            width: 50%;
+            height: 32rem;
+            
         }
 
         @include desktop {
-            width: 18.5rem;
-            height: 32rem;
+            width: 30rem;
+            height: 35rem;
         }
     }
 
@@ -54,6 +59,10 @@
         height: 70%;
         padding: 0 2.25rem;
 
+        @include tablet {
+            height: 65%;
+            font-size: 1.5rem;
+        }
     }
 
     &__avatar {
@@ -67,15 +76,15 @@
         left: 33%;
 
         @include tablet {
-            top: 55%;
-            left: 44%;
+            top: 50%;
+            left: 40%;
             height: 6rem;
             width: 6rem;
         }
 
         @include desktop {
             top: 57%;
-            left: 34%;
+            left: 37%;
         }
         
     }
@@ -90,6 +99,11 @@
         justify-content: center;
         background-color: rgba(199, 31, 199, 0.801);
         color: $background-white;
+
+        @include tablet {
+            height: 35%;
+            font-size: 1.5rem;
+        }
     }
 
     &__orange {

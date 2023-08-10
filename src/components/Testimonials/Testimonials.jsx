@@ -9,7 +9,7 @@ export default function Testimonials() {
         <section className="testimonials">
             <div className="testimonials__card">
                 <div className="testimonials__quote-container">
-                    <p>The best thing about using Little Links is the amount of time we saved!</p>
+                    <p>The best thing about using Little Links is the amount of time we saved! No more writing reports on paper!</p>
                 </div>
                 <img className="testimonials__avatar" src={userAllison}></img>
                 <div className="testimonials__author-container">
@@ -20,7 +20,7 @@ export default function Testimonials() {
 
             <div className="testimonials__card">
                 <div className="testimonials__quote-container testimonials__">
-                    <p>The best thing about using Little Links is the amount of time we saved!</p>
+                    <p>Instead of having a quick conversation with parents at the end of the day, they can see all the deep and meaningful learning happening throughout the day!</p>
                 </div>
                 <img className="testimonials__avatar" src={userJoanna}></img>
                 <div className="testimonials__author-container testimonials__yellow">
@@ -31,7 +31,7 @@ export default function Testimonials() {
 
             <div className="testimonials__card">
                 <div className="testimonials__quote-container">
-                    <p>The best thing about using Little Links is the amount of time we saved!</p>
+                    <p>Parents are thrilled with the 100% increase in communication and they don't have to be worried about their child while they go to work!</p>
                 </div>
                 <img className="testimonials__avatar" src={userDavid}></img>
                 <div className="testimonials__author-container testimonials__orange">
